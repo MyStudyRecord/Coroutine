@@ -7,9 +7,7 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.example.coroutine.R
 import com.example.coroutine.databinding.ActivityMainStudy40Binding
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
 
 class MainActivity_Study_40 : AppCompatActivity() {
     lateinit var binding : ActivityMainStudy40Binding
@@ -36,12 +34,17 @@ class MainActivity_Study_40 : AppCompatActivity() {
             CoroutineScope(Dispatchers.IO).launch {
                  downloadUserData()
              }
+
         }
     }
 
-    private fun downloadUserData(){
+    //suspend를 사용해여 withContext에 오류가 안난다
+    private suspend fun downloadUserData(){
         for(i in 1..200000){
-            Log.d("MyTag","Downloading user $i in ${Thread.currentThread().name}")
+            withContext(Dispatchers.Main){
+                binding.tvUserMessage.text = "Downloading user $i in ${Thread.currentThread().name}"
+                delay(100)
+            }
         }
     }
 }
