@@ -9,16 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Coroutine">
-        <activity android:name=".switchTheThreadOfaCoroutine44.MainActivity_Study_44"></activity>
-        <activity android:name=".codingChallenge43.CodingChallenge43">
-
-        </activity>
-        <activity android:name=".ourFirstCoroutine40.MainActivity_Study_40">
+        <activity android:name=".async_Await48.MainActivity_Study_48">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".switchTheThreadOfaCoroutine44.MainActivity_Study_44" />
+        <activity android:name=".codingChallenge43.CodingChallenge43"></activity>
+        <activity android:name=".ourFirstCoroutine40.MainActivity_Study_40">
+
         </activity>
         <activity android:name=".MainActivity" />
     </application>
