@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.coroutine.R
 import com.example.coroutine.databinding.ActivityMainStudy49Binding
+import com.example.coroutine.structuredConcurrency50.UserDataManager2
 import kotlinx.coroutines.*
 
 class MainActivity_Study_49 : AppCompatActivity() {
@@ -24,7 +25,7 @@ class MainActivity_Study_49 : AppCompatActivity() {
             //TextView 값을 표시 할려면 IO에서 Main으로 변경해야함
             //Main쓰레드에서 Ui값 수정 가능하기 때문
             CoroutineScope(Dispatchers.Main).launch {
-                binding.tvUserMessage.text = UserDataManager().getTotalUserCount().toString()
+                binding.tvUserMessage.text = UserDataManager2().getTotalUserCount().toString()
             }
 
         }
