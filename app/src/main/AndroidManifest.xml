@@ -9,17 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Coroutine">
-        <activity android:name=".viewModelScope51.MainActivity_Study_51">
+        <activity android:name=".lifecycleScope52.LifecycleDemo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UnstructuredConcurrency49.MainActivity_Study_49">
+        <activity android:name=".viewModelScope51.MainActivity_Study_51">
 
         </activity>
-        <activity android:name=".async_Await48.MainActivity_Study_48"></activity>
+        <activity android:name=".UnstructuredConcurrency49.MainActivity_Study_49" />
+        <activity android:name=".async_Await48.MainActivity_Study_48" />
         <activity android:name=".switchTheThreadOfaCoroutine44.MainActivity_Study_44" />
         <activity android:name=".codingChallenge43.CodingChallenge43" />
         <activity android:name=".ourFirstCoroutine40.MainActivity_Study_40" />
