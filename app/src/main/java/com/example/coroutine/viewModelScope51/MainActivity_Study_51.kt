@@ -16,7 +16,7 @@ class MainActivity_Study_51 : AppCompatActivity() {
         //수명주기 소유자는 MainActivity
         mainActivityViewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)
 
-        mainActivityViewModel.getUserData()
+//        mainActivityViewModel.getUserData()
         mainActivityViewModel.users.observe(this, Observer {
             myUsers-> myUsers.forEach{
                 Log.i("MyTag","name is ${it.name}")
